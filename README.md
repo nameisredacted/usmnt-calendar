@@ -277,25 +277,31 @@ Notes and limits:
   page — the latter serves HTML and the subscription will fail to parse.
 - Pin the branch (`main`), not a commit SHA, or the URL stops updating.
 
-### Credentials for the automated push
+### Credentials for the automated push — already working, don't rebuild it
 
-`refresh-monthly.sh` commits and pushes when the calendar changes. launchd runs
-it with no terminal, so git must authenticate without prompting. There are
-currently **no SSH keys on this machine**, so pick one:
+`refresh-monthly.sh` (weekly, despite the name) commits and pushes when the calendar changes. launchd runs
+it with no terminal, so git must authenticate without prompting.
 
-```bash
-# SSH (recommended for automation)
-ssh-keygen -t ed25519 -C "usmnt-calendar"    # empty passphrase, or add to keychain
-pbcopy < ~/.ssh/id_ed25519.pub               # paste into GitHub > Settings > SSH keys
-ssh -T git@github.com                        # verify
+**This machine authenticates over HTTPS using the token GitHub Desktop already
+put in the macOS keychain.** No SSH key is involved and none is needed:
+
+```
+remote:                 https://github.com/<user>/<repo>.git
+credential.helper:      osxkeychain           (git config --global)
+token source:           GitHub Desktop's keychain entry
 ```
 
+Check it in one command — "Everything up-to-date" means auth is fine:
+
 ```bash
-# or HTTPS + personal access token, stored once in the macOS keychain
-git remote set-url origin https://github.com/<user>/<repo>.git
-git config --global credential.helper osxkeychain
-git push -u origin main                      # username = GitHub user, password = PAT
+GIT_TERMINAL_PROMPT=0 git push --dry-run origin main
 ```
+
+If that ever fails, open GitHub Desktop and confirm you are still signed in;
+re-authenticating there refreshes the keychain entry the job uses. Generating
+an SSH key is **not** the fix, and an SSH key with an empty passphrase is a
+standing credential you would then have to look after — this repo deliberately
+does not use one.
 
 The push runs with `GIT_TERMINAL_PROMPT=0`, so missing credentials fail fast
 and get logged rather than hanging a background job forever. Until an `origin`
@@ -303,7 +309,7 @@ remote exists the publish step is skipped and logged; the refresh still runs.
 
 ## Scheduling it
 
-Installed as a launchd agent that runs **monthly, on the 1st at 09:00 local**:
+Installed as a launchd agent that runs **weekly, Mondays at 09:00 local**:
 
 ```
 ~/Library/LaunchAgents/local.usmnt-calendar.refresh.plist   the schedule
@@ -322,18 +328,13 @@ tail -40 refresh.log                                         # what happened
 ```
 
 **Changing the cadence** — edit `StartCalendarInterval` in the plist, then
-reload it. Drop the `Day` key for daily; use an array of dicts for several
-times. Weekly (`Weekday`, 0 = Sunday) is a better fit if you care about
-kickoff times, which get confirmed in the weeks before a window:
+reload it. `Weekday` 0 = Sunday, 1 = Monday. Swap `Weekday` for `Day` to go
+monthly; drop both for daily; use an array of dicts for several times.
 
-```xml
-<key>StartCalendarInterval</key>
-<dict>
-    <key>Weekday</key><integer>1</integer>
-    <key>Hour</key><integer>9</integer>
-    <key>Minute</key><integer>0</integer>
-</dict>
-```
+Weekly is the default because kickoff times get confirmed in the weeks before
+a window, and the competition-window placeholders resolve into real fixtures
+once Concacaf runs its draw — a monthly cadence can sit on a stale placeholder
+for 30 days.
 
 ```bash
 launchctl bootout gui/$UID/local.usmnt-calendar.refresh
