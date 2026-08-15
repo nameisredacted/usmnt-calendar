@@ -1,0 +1,51 @@
+{
+  "_comment": [
+    "Venue Opta-ID -> IANA timezone. HUMAN-MAINTAINED. Never auto-generated.",
+    "",
+    "WHY THIS FILE EXISTS: a UID contains the venue-LOCAL match date. To get a",
+    "local date from the UTC kickoff we need the venue's timezone. Guessing it",
+    "(e.g. 'US venue => Eastern') would silently produce a wrong local date for",
+    "a night game and therefore a wrong, unstable UID -- which duplicates the",
+    "event for every subscriber. So: no timezone here => the fixture is",
+    "QUARANTINED (reported loudly, kept out of the .ics) rather than guessed.",
+    "",
+    "CHANGING A tz VALUE CHANGES UIDs. test_refresh.py pins the UIDs of every",
+    "venue below; edit a tz and the test suite fails on purpose.",
+    "",
+    "'name' and 'location' are documentation only -- the Opta id is the key,",
+    "because stadium names get resold (Busch -> Energizer Park) but ids do not."
+  ],
+  "venues": {
+    "3udn5yhh0bcxwmjokvt4xnm5l": {
+      "tz": "America/New_York",
+      "name": "Inter&Co Stadium",
+      "location": "Orlando, FL, USA"
+    },
+    "f3zjl2b5cqty5woe8purq000k": {
+      "tz": "America/Chicago",
+      "name": "Energizer Park",
+      "location": "St Louis, MO, USA"
+    },
+    "7paouifzs4wopmnhclh8nmitr": {
+      "tz": "America/Phoenix",
+      "name": "State Farm Stadium",
+      "location": "Glendale, AZ, USA",
+      "note": "Arizona does not observe DST -- America/Phoenix is UTC-7 year round. This is exactly why venue tz is a lookup and not 'US = Eastern'."
+    },
+    "4r577lkiom42o39a9llb0jm22": {
+      "tz": "America/Chicago",
+      "name": "Allianz Field",
+      "location": "St Paul, MN, USA"
+    },
+    "9boxjzjmdh6tpprg145agh0id": {
+      "tz": "Asia/Qatar",
+      "name": "ASPIRE Academy Pitch 2",
+      "location": "Doha, Qatar"
+    },
+    "77jtfrj9s350emecqwtvp6bit": {
+      "tz": "Asia/Qatar",
+      "name": "ASPIRE Academy Pitch 3",
+      "location": "Doha, Qatar"
+    }
+  }
+}

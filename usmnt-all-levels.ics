@@ -1,0 +1,204 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//usmnt-calendar//US Men's National Teams U17+//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:USMNT (all levels)
+X-WR-CALDESC:US men's national teams\, U-17 and above. Unconfirmed kickoffs
+  appear as all-day events\; see each event's description.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:window-2026-09-21-calendar-nations-league
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20261007
+SUMMARY:[TBD] Concacaf Nations League
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2026-0
+ 9-21 to 2026-10-06 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'September 21 - October 6'. No fixtures published yet --
+  this is a placeholder for the whole window\, not a match.\nSource: concac
+ af -> https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nat
+ ions-league
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:1ed39ba6f322f351
+END:VEVENT
+BEGIN:VEVENT
+UID:usmnt-2026-09-26-per
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20260926T203000Z
+DTEND:20260926T223000Z
+SUMMARY:USMNT vs Peru
+DESCRIPTION:Kickoff 2026-09-26 20:30 UTC.\nLocal time at venue: 2026-09-26 
+ 16:30 (America/New_York\, UTC-4).\nCompetition: International Friendly - F
+ riendlies 1\nVenue: Inter.co Stadium\, Orlando\, FL\nTV/stream: FDP\, HBO 
+ Max\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\nSources:
+  ussoccer[usmnt]\n  ussoccer[usmnt] -> https://api.ussoccer.com/api/match?
+ contestantId=9vh2u1p4ppm597tjfahst2m3n&year=0&upcoming=25&past=0&includeCu
+ rrent=true&penaltyShots=true
+LOCATION:Inter.co Stadium\, Orlando\, FL
+CATEGORIES:USMNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:ccb83a9699b85437
+END:VEVENT
+BEGIN:VEVENT
+UID:usmnt-2026-09-29-chi
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20260930T000000Z
+DTEND:20260930T020000Z
+SUMMARY:USMNT vs Chile
+DESCRIPTION:Kickoff 2026-09-30 00:00 UTC.\nLocal time at venue: 2026-09-29 
+ 19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
+ iendlies 1\nVenue: Energizer Park\, St Louis\, MO\nTV/stream: FDP\, HBO Ma
+ x\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\n[ussoccer[
+ usmnt]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket camp
+ aign stamp for 2026-09-29.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] ->
+  https://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n
+ &year=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+LOCATION:Energizer Park\, St Louis\, MO
+CATEGORIES:USMNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:32af8b2da6cd2fab
+END:VEVENT
+BEGIN:VEVENT
+UID:usmnt-2026-10-03-mex
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20261004T020000Z
+DTEND:20261004T040000Z
+SUMMARY:USMNT vs Mexico
+DESCRIPTION:Kickoff 2026-10-04 02:00 UTC.\nLocal time at venue: 2026-10-03 
+ 19:00 (America/Phoenix\, UTC-7).\nCompetition: International Friendly - Fr
+ iendlies 1\nVenue: State Farm Stadium\, Glendale\, AZ\nTV/stream: FDP\, HB
+ O Max\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\nSource
+ s: ussoccer[usmnt]\n  ussoccer[usmnt] -> https://api.ussoccer.com/api/matc
+ h?contestantId=9vh2u1p4ppm597tjfahst2m3n&year=0&upcoming=25&past=0&include
+ Current=true&penaltyShots=true
+LOCATION:State Farm Stadium\, Glendale\, AZ
+CATEGORIES:USMNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:bbaefe44abe6c4e0
+END:VEVENT
+BEGIN:VEVENT
+UID:usmnt-2026-10-06-can
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20261007T000000Z
+DTEND:20261007T020000Z
+SUMMARY:USMNT vs Canada
+DESCRIPTION:Kickoff 2026-10-07 00:00 UTC.\nLocal time at venue: 2026-10-06 
+ 19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
+ iendlies 1\nVenue: Allianz Field\, St Paul\, MN\nTV/stream: FDP\, HBO Max\
+ , Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\n[ussoccer[us
+ mnt]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campai
+ gn stamp for 2026-10-06.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> h
+ ttps://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&y
+ ear=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+LOCATION:Allianz Field\, St Paul\, MN
+CATEGORIES:USMNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:56c6bbdf710a5780
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2026-11-09-calendar-nations-league-nov-2026
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261118
+SUMMARY:[TBD] Concacaf Nations League
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2026-1
+ 1-09 to 2026-11-17 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'November 9 - 17'. No fixtures published yet -- this is 
+ a placeholder for the whole window\, not a match.\nSource: concacaf -> htt
+ ps://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nations-leag
+ ue-nov-2026
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:2d893c062d3e0e2e
+END:VEVENT
+BEGIN:VEVENT
+UID:u17-2026-11-21-mne
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20261121T143000Z
+DTEND:20261121T163000Z
+SUMMARY:U-17 MNT vs Montenegro
+DESCRIPTION:Kickoff 2026-11-21 14:30 UTC.\nLocal time at venue: 2026-11-21 
+ 17:30 (Asia/Qatar\, UTC+3).\nCompetition: FIFA U17 World Cup - Group Stage
+ \nVenue: ASPIRE Academy Pitch 3\, Doha\nSources: ussoccer[u17]\n  ussoccer
+ [u17] -> https://api.ussoccer.com/api/match?contestantId=x1zdh3b7nwu0ql0uc
+ 5tgic9e&year=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+LOCATION:ASPIRE Academy Pitch 3\, Doha
+CATEGORIES:U-17 MNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:2e5671c6a7908045
+END:VEVENT
+BEGIN:VEVENT
+UID:u17-2026-11-24-chi
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20261124T143000Z
+DTEND:20261124T163000Z
+SUMMARY:U-17 MNT vs Chile
+DESCRIPTION:Kickoff 2026-11-24 14:30 UTC.\nLocal time at venue: 2026-11-24 
+ 17:30 (Asia/Qatar\, UTC+3).\nCompetition: FIFA U17 World Cup - Group Stage
+ \nVenue: ASPIRE Academy Pitch 3\, Doha\nSources: ussoccer[u17]\n  ussoccer
+ [u17] -> https://api.ussoccer.com/api/match?contestantId=x1zdh3b7nwu0ql0uc
+ 5tgic9e&year=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+LOCATION:ASPIRE Academy Pitch 3\, Doha
+CATEGORIES:U-17 MNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:5662f61e020ee10a
+END:VEVENT
+BEGIN:VEVENT
+UID:u17-2026-11-27-alg
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+DTEND:20261127T170000Z
+SUMMARY:U-17 MNT vs Algeria (A)
+DESCRIPTION:Kickoff 2026-11-27 15:00 UTC.\nLocal time at venue: 2026-11-27 
+ 18:00 (Asia/Qatar\, UTC+3).\nCompetition: FIFA U17 World Cup - Group Stage
+ \nVenue: ASPIRE Academy Pitch 2\, Doha\nSources: ussoccer[u17]\n  ussoccer
+ [u17] -> https://api.ussoccer.com/api/match?contestantId=x1zdh3b7nwu0ql0uc
+ 5tgic9e&year=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+LOCATION:ASPIRE Academy Pitch 2\, Doha
+CATEGORIES:U-17 MNT
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-USMNT-CONTENT-HASH:05f44f3d8197b6e3
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2027-02-15-under-17-qualifiers-2027
+DTSTAMP:20260812T060800Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270222
+SUMMARY:[TBD] Concacaf U-17 Qualifiers
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2027-0
+ 2-15 to 2027-02-21 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'February 15-21'. No fixtures published yet -- this is a
+  placeholder for the whole window\, not a match.\nSource: concacaf -> http
+ s://dapi.concacaf.com/v2/content/en-us/competitions/under-17-qualifiers-20
+ 27
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:24a714cc7f10ff21
+END:VEVENT
+END:VCALENDAR

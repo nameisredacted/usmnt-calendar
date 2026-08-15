@@ -1,0 +1,53 @@
+{
+  "_comment": [
+    "Hand-entered fixtures. Use this for matches no scraper can reach --",
+    "a youth camp friendly announced only in a press release, or a fixture",
+    "you have confirmed from a source this script does not parse.",
+    "",
+    "Entries go through exactly the same rules as scraped data. In particular:",
+    "",
+    "  * OMIT kickoff_utc if the time is not confirmed. The entry becomes an",
+    "    all-day event. Do not put in an approximate time -- an approximate",
+    "    time in a calendar is indistinguishable from a real one.",
+    "  * kickoff_utc must carry an explicit offset (…Z or +03:00). A naive",
+    "    timestamp is rejected rather than assumed to be UTC.",
+    "  * opponent_code must be exactly 3 letters and must come from the source,",
+    "    not from truncating a country name (CHI/CHN, NIG/NGA both collide).",
+    "  * You must supply either local_date, or kickoff_utc together with",
+    "    venue_tz. The venue-local date is what the UID is built from.",
+    "",
+    "If a seeded fixture has the same UID as a scraped one, the two are merged",
+    "and any disagreement about kickoff time is surfaced as a spanning block",
+    "rather than resolved -- which makes this file a useful way to cross-check",
+    "a source you do not fully trust.",
+    "",
+    "Set \"enabled\": true once you add entries."
+  ],
+
+  "enabled": false,
+  "fixtures": [],
+
+  "_example_do_not_uncomment_without_editing": [
+    {
+      "team": "u20",
+      "opponent": "Costa Rica",
+      "opponent_code": "crc",
+      "kickoff_utc": "2026-11-14T23:00:00Z",
+      "venue_tz": "America/Costa_Rica",
+      "venue": "Estadio Nacional, San José",
+      "competition": "Concacaf U-20 Championship",
+      "home_away": "away",
+      "source_url": "https://www.concacaf.com/…",
+      "notes": ["Entered by hand from the Concacaf match-schedule PDF, 2026-08-11."]
+    },
+    {
+      "team": "u23",
+      "opponent": "Japan",
+      "opponent_code": "jpn",
+      "local_date": "2026-10-13",
+      "venue": "TBD",
+      "competition": "International Friendly",
+      "notes": ["Date announced, kickoff time not yet published -- intentionally no kickoff_utc."]
+    }
+  ]
+}

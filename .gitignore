@@ -1,0 +1,19 @@
+# Run logs -- local noise, and they churn every month.
+refresh.log
+launchd.out.log
+launchd.err.log
+
+# Transient files from the atomic write / log rotation.
+.usmnt-all-levels.ics.*
+.refresh.log.*
+
+.DS_Store
+__pycache__/
+*.pyc
+
+# NOTE: usmnt-all-levels.ics is deliberately NOT ignored. It is the published
+# artifact -- the raw GitHub URL your calendar subscribes to serves it straight
+# out of this repo, so it has to be committed.
+#
+# fixtures/ is also deliberately tracked: the tests run against those saved
+# responses, and --offline rebuilds from them.
