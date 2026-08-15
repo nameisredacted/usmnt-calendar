@@ -7,6 +7,11 @@ launchd.err.log
 .usmnt-all-levels.ics.*
 .refresh.log.*
 
+# Last good response from each source, rewritten on every live run. Distinct
+# from fixtures/, which is the frozen corpus the tests assert against and must
+# never be touched by a run.
+cache/
+
 .DS_Store
 __pycache__/
 *.pyc

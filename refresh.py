@@ -2,7 +2,7 @@
 """Build usmnt-all-levels.ics -- every U.S. men's national team from U-17 up.
 
     python3 refresh.py              # fetch live, write, print changelog
-    python3 refresh.py --offline    # rebuild from fixtures/ (no network)
+    python3 refresh.py --offline    # rebuild from cache/ or fixtures/ (no network)
     python3 refresh.py --dry-run    # show the changelog, write nothing
 
 The point of this script is not that it produces a calendar; it is that it
@@ -41,7 +41,17 @@ from sources import (
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_OUTPUT = os.path.join(HERE, "usmnt-all-levels.ics")
+
+# fixtures/ is a FROZEN test corpus: hand-curated, committed, and never
+# written by a live run. cache/ is the last good response from each source,
+# rewritten every run and gitignored.
+#
+# These were one directory until a live run was observed rewriting the corpus
+# the tests assert against -- which meant the suite silently validated
+# whatever the sources happened to return last, and a source changing shape
+# would have moved the goalposts instead of failing the build.
 FIXTURE_DIR = os.path.join(HERE, "fixtures")
+CACHE_DIR = os.path.join(HERE, "cache")
 VENUES_PATH = os.path.join(HERE, "venues.json")
 SEED_PATH = os.path.join(HERE, "seed.json")
 
@@ -161,7 +171,7 @@ def collect(*, offline: bool, venues: VenueBook, horizon_days: int = 540) -> Col
                 payload = _read_fixture("ussoccer_{}.json".format(team))
             else:
                 payload = sources.fetch(url, accept="application/json")
-                _save_fixture("ussoccer_{}.json".format(team), payload)
+                _save_cache("ussoccer_{}.json".format(team), payload)
             return sources.parse_ussoccer(payload, venues, team=team, source_url=url)
 
         col.add(name, run)
@@ -172,7 +182,7 @@ def collect(*, offline: bool, venues: VenueBook, horizon_days: int = 540) -> Col
             payload = _read_fixture("concacaf_competitions.json")
         else:
             payload = _fetch_concacaf_all()
-            _save_fixture("concacaf_competitions.json", payload)
+            _save_cache("concacaf_competitions.json", payload)
         return sources.parse_concacaf_windows(
             payload, today=date.today(), horizon=horizon
         )
@@ -185,7 +195,7 @@ def collect(*, offline: bool, venues: VenueBook, horizon_days: int = 540) -> Col
             payload = _read_fixture("fifa_u17wc_qatar2026.html")
         else:
             payload = sources.fetch(FIFA_U17_URL, accept="text/html")
-            _save_fixture("fifa_u17wc_qatar2026.html", payload)
+            _save_cache("fifa_u17wc_qatar2026.html", payload)
         return sources.parse_fifa_u17(payload, venues)
 
     col.add("fifa", run_fifa)
@@ -228,18 +238,26 @@ def _fetch_concacaf_all() -> bytes:
 
 
 def _read_fixture(name: str) -> bytes:
-    path = os.path.join(FIXTURE_DIR, name)
-    if not os.path.exists(path):
-        raise sources.FetchError("no saved fixture at {}".format(path))
-    with open(path, "rb") as fh:
-        return fh.read()
+    """Read a saved payload for --offline: freshest cache first, corpus second."""
+    for directory in (CACHE_DIR, FIXTURE_DIR):
+        path = os.path.join(directory, name)
+        if os.path.exists(path):
+            with open(path, "rb") as fh:
+                return fh.read()
+    raise sources.FetchError(
+        "no saved payload for {} in {} or {}".format(name, CACHE_DIR, FIXTURE_DIR)
+    )
 
 
-def _save_fixture(name: str, payload: bytes) -> None:
-    """Keep the last good response so --offline and the tests stay honest."""
+def _save_cache(name: str, payload: bytes) -> None:
+    """Keep the last good response so --offline can rebuild without network.
+
+    Writes to cache/ only. Never touches fixtures/ -- overwriting the corpus
+    from a live run would let a source change what the tests assert.
+    """
     try:
-        os.makedirs(FIXTURE_DIR, exist_ok=True)
-        _atomic_write(os.path.join(FIXTURE_DIR, name), payload)
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        _atomic_write(os.path.join(CACHE_DIR, name), payload)
     except OSError:
         pass  # caching is a convenience, never a reason to fail a run
 

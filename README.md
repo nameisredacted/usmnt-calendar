@@ -24,8 +24,15 @@ sources.py        one parser per source
 test_refresh.py   68 tests, run against saved fixtures
 venues.json       venue id -> IANA timezone   (hand-maintained, load-bearing)
 seed.json         hand-entered fixtures       (hand-maintained, off by default)
-fixtures/         last good response from each source
+fixtures/         frozen test corpus (committed, never written by a run)
+cache/            last good response from each source (gitignored)
 ```
+
+`fixtures/` and `cache/` are deliberately separate. A live run writes only to
+`cache/`; if it also refreshed `fixtures/`, the test suite would assert against
+whatever the sources happened to return last, and a source silently changing
+shape would move the goalposts instead of failing the build. `--offline`
+prefers `cache/` and falls back to `fixtures/`.
 
 ---
 
