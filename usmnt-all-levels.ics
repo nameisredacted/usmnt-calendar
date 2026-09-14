@@ -49,24 +49,24 @@ X-USMNT-CONTENT-HASH:ccb83a9699b85437
 END:VEVENT
 BEGIN:VEVENT
 UID:usmnt-2026-09-29-chi
-DTSTAMP:20260812T060800Z
-SEQUENCE:0
+DTSTAMP:20260914T160009Z
+SEQUENCE:1
 DTSTART:20260930T000000Z
 DTEND:20260930T020000Z
 SUMMARY:USMNT vs Chile
 DESCRIPTION:Kickoff 2026-09-30 00:00 UTC.\nLocal time at venue: 2026-09-29 
  19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
  iendlies 1\nVenue: Energizer Park\, St Louis\, MO\nTV/stream: FDP\, HBO Ma
- x\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\n[ussoccer[
- usmnt]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket camp
- aign stamp for 2026-09-29.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] ->
-  https://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n
- &year=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+ x\, Peacock\, TNT\, Universo\, Westwood One Sports\, truTV\n[ussoccer[usmn
+ t]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campaign
+  stamp for 2026-09-29.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> htt
+ ps://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&yea
+ r=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
 LOCATION:Energizer Park\, St Louis\, MO
 CATEGORIES:USMNT
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:32af8b2da6cd2fab
+X-USMNT-CONTENT-HASH:0934ee55ac606b6b
 END:VEVENT
 BEGIN:VEVENT
 UID:usmnt-2026-10-03-mex
