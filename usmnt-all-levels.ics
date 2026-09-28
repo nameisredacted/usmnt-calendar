@@ -28,26 +28,6 @@ TRANSP:TRANSPARENT
 X-USMNT-CONTENT-HASH:1ed39ba6f322f351
 END:VEVENT
 BEGIN:VEVENT
-UID:usmnt-2026-09-26-per
-DTSTAMP:20260812T060800Z
-SEQUENCE:0
-DTSTART:20260926T203000Z
-DTEND:20260926T223000Z
-SUMMARY:USMNT vs Peru
-DESCRIPTION:Kickoff 2026-09-26 20:30 UTC.\nLocal time at venue: 2026-09-26 
- 16:30 (America/New_York\, UTC-4).\nCompetition: International Friendly - F
- riendlies 1\nVenue: Inter.co Stadium\, Orlando\, FL\nTV/stream: FDP\, HBO 
- Max\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\nSources:
-  ussoccer[usmnt]\n  ussoccer[usmnt] -> https://api.ussoccer.com/api/match?
- contestantId=9vh2u1p4ppm597tjfahst2m3n&year=0&upcoming=25&past=0&includeCu
- rrent=true&penaltyShots=true
-LOCATION:Inter.co Stadium\, Orlando\, FL
-CATEGORIES:USMNT
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:ccb83a9699b85437
-END:VEVENT
-BEGIN:VEVENT
 UID:usmnt-2026-09-29-chi
 DTSTAMP:20260914T160009Z
 SEQUENCE:1
