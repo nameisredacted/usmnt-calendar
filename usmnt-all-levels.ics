@@ -28,85 +28,44 @@ TRANSP:TRANSPARENT
 X-USMNT-CONTENT-HASH:1ed39ba6f322f351
 END:VEVENT
 BEGIN:VEVENT
-UID:usmnt-2026-09-29-chi
-DTSTAMP:20260914T160009Z
-SEQUENCE:1
-DTSTART:20260930T000000Z
-DTEND:20260930T020000Z
-SUMMARY:USMNT vs Chile
-DESCRIPTION:Kickoff 2026-09-30 00:00 UTC.\nLocal time at venue: 2026-09-29 
- 19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
- iendlies 1\nVenue: Energizer Park\, St Louis\, MO\nTV/stream: FDP\, HBO Ma
- x\, Peacock\, TNT\, Universo\, Westwood One Sports\, truTV\n[ussoccer[usmn
- t]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campaign
-  stamp for 2026-09-29.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> htt
- ps://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&yea
- r=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
-LOCATION:Energizer Park\, St Louis\, MO
-CATEGORIES:USMNT
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:0934ee55ac606b6b
-END:VEVENT
-BEGIN:VEVENT
-UID:usmnt-2026-10-03-mex
-DTSTAMP:20260812T060800Z
-SEQUENCE:0
-DTSTART:20261004T020000Z
-DTEND:20261004T040000Z
-SUMMARY:USMNT vs Mexico
-DESCRIPTION:Kickoff 2026-10-04 02:00 UTC.\nLocal time at venue: 2026-10-03 
- 19:00 (America/Phoenix\, UTC-7).\nCompetition: International Friendly - Fr
- iendlies 1\nVenue: State Farm Stadium\, Glendale\, AZ\nTV/stream: FDP\, HB
- O Max\, Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\nSource
- s: ussoccer[usmnt]\n  ussoccer[usmnt] -> https://api.ussoccer.com/api/matc
- h?contestantId=9vh2u1p4ppm597tjfahst2m3n&year=0&upcoming=25&past=0&include
- Current=true&penaltyShots=true
-LOCATION:State Farm Stadium\, Glendale\, AZ
-CATEGORIES:USMNT
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:bbaefe44abe6c4e0
-END:VEVENT
-BEGIN:VEVENT
 UID:usmnt-2026-10-06-can
-DTSTAMP:20260812T060800Z
-SEQUENCE:0
+DTSTAMP:20261005T160007Z
+SEQUENCE:1
 DTSTART:20261007T000000Z
 DTEND:20261007T020000Z
 SUMMARY:USMNT vs Canada
 DESCRIPTION:Kickoff 2026-10-07 00:00 UTC.\nLocal time at venue: 2026-10-06 
  19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
  iendlies 1\nVenue: Allianz Field\, St Paul\, MN\nTV/stream: FDP\, HBO Max\
- , Peacock\, TNT\, Telemundo\, Universo\, Westwood One Sports\n[ussoccer[us
- mnt]] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campai
- gn stamp for 2026-10-06.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> h
- ttps://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&y
- ear=0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
+ , Peacock\, TNT\, Universo\, Westwood One Sports\, truTV\n[ussoccer[usmnt]
+ ] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campaign s
+ tamp for 2026-10-06.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> https
+ ://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&year=
+ 0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
 LOCATION:Allianz Field\, St Paul\, MN
 CATEGORIES:USMNT
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:56c6bbdf710a5780
+X-USMNT-CONTENT-HASH:3dfe1d3e670042ad
 END:VEVENT
 BEGIN:VEVENT
-UID:window-2026-11-09-calendar-nations-league-nov-2026
-DTSTAMP:20260812T060800Z
+UID:window-2026-11-11-calendar-nations-league-nov-2026
+DTSTAMP:20261005T160007Z
 SEQUENCE:0
-DTSTART;VALUE=DATE:20261109
+DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261118
 SUMMARY:[TBD] Concacaf Nations League
 DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
  ceholder covering the whole announced window\, not a match.\nDates: 2026-1
- 1-09 to 2026-11-17 inclusive.\nVenues: Various\nCompetition window announc
- ed by Concacaf as 'November 9 - 17'. No fixtures published yet -- this is 
- a placeholder for the whole window\, not a match.\nSource: concacaf -> htt
- ps://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nations-leag
- ue-nov-2026
+ 1-11 to 2026-11-17 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'November 11 - 17'. No fixtures published yet -- this is
+  a placeholder for the whole window\, not a match.\nSource: concacaf -> ht
+ tps://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nations-lea
+ gue-nov-2026
 CATEGORIES:WINDOW
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-X-USMNT-CONTENT-HASH:2d893c062d3e0e2e
+X-USMNT-CONTENT-HASH:59a53d529fd9bd44
 END:VEVENT
 BEGIN:VEVENT
 UID:u17-2026-11-21-mne
@@ -163,22 +122,98 @@ TRANSP:OPAQUE
 X-USMNT-CONTENT-HASH:05f44f3d8197b6e3
 END:VEVENT
 BEGIN:VEVENT
-UID:window-2027-02-15-under-17-qualifiers-2027
-DTSTAMP:20260812T060800Z
+UID:window-2027-02-08-under-17-qualifiers-2027
+DTSTAMP:20261005T160007Z
 SEQUENCE:0
-DTSTART;VALUE=DATE:20270215
-DTEND;VALUE=DATE:20270222
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270215
 SUMMARY:[TBD] Concacaf U-17 Qualifiers
 DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
  ceholder covering the whole announced window\, not a match.\nDates: 2027-0
- 2-15 to 2027-02-21 inclusive.\nVenues: Various\nCompetition window announc
- ed by Concacaf as 'February 15-21'. No fixtures published yet -- this is a
-  placeholder for the whole window\, not a match.\nSource: concacaf -> http
- s://dapi.concacaf.com/v2/content/en-us/competitions/under-17-qualifiers-20
- 27
+ 2-08 to 2027-02-14 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'February 8 - 14'. No fixtures published yet -- this is 
+ a placeholder for the whole window\, not a match.\nSource: concacaf -> htt
+ ps://dapi.concacaf.com/v2/content/en-us/competitions/under-17-qualifiers-2
+ 027
 CATEGORIES:WINDOW
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-X-USMNT-CONTENT-HASH:24a714cc7f10ff21
+X-USMNT-CONTENT-HASH:f9c13b18d45b45d1
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2028-01-31-calendar-u17-qualifiers-2028
+DTSTAMP:20261005T160007Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280207
+SUMMARY:[TBD] Concacaf Under-17 Qualifiers
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2028-0
+ 1-31 to 2028-02-06 inclusive.\nVenues: -\nCompetition window announced by 
+ Concacaf as 'January 31 - February 6'. No fixtures published yet -- this i
+ s a placeholder for the whole window\, not a match.\nSource: concacaf -> h
+ ttps://dapi.concacaf.com/v2/content/en-us/competitions/calendar-u17-qualif
+ iers-2028
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:deb2379d670d1116
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2028-01-31-under-17-qualifiers-2028
+DTSTAMP:20261005T160007Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280207
+SUMMARY:[TBD] Concacaf U-17 Qualifiers
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2028-0
+ 1-31 to 2028-02-06 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'January 31 - February 6'. No fixtures published yet -- 
+ this is a placeholder for the whole window\, not a match.\nSource: concaca
+ f -> https://dapi.concacaf.com/v2/content/en-us/competitions/under-17-qual
+ ifiers-2028
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:b0cffafa24cdd079
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2028-02-25-calendar-u20-qualifiers-2028
+DTSTAMP:20261005T160007Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20280225
+DTEND;VALUE=DATE:20280306
+SUMMARY:[TBD] Concacaf Under-20 Qualifiers
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2028-0
+ 2-25 to 2028-03-05 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'February 25 - March 5'. No fixtures published yet -- th
+ is is a placeholder for the whole window\, not a match.\nSource: concacaf 
+ -> https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-u20-qu
+ alifiers-2028
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:7a5902aaeedb0c98
+END:VEVENT
+BEGIN:VEVENT
+UID:window-2028-03-22-calendar-nations-league-finals-2028-29
+DTSTAMP:20261005T160007Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20280322
+DTEND;VALUE=DATE:20280326
+SUMMARY:[TBD] Concacaf Nations League Finals
+DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
+ ceholder covering the whole announced window\, not a match.\nDates: 2028-0
+ 3-22 to 2028-03-25 inclusive.\nVenues: -\nCompetition window announced by 
+ Concacaf as 'March 22 - 25'. No fixtures published yet -- this is a placeh
+ older for the whole window\, not a match.\nSource: concacaf -> https://dap
+ i.concacaf.com/v2/content/en-us/competitions/calendar-nations-league-final
+ s-2028-29
+CATEGORIES:WINDOW
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-USMNT-CONTENT-HASH:9981f40b1475db27
 END:VEVENT
 END:VCALENDAR
