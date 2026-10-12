@@ -9,63 +9,23 @@ X-WR-CALDESC:US men's national teams\, U-17 and above. Unconfirmed kickoffs
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:window-2026-09-21-calendar-nations-league
-DTSTAMP:20260812T060800Z
+UID:window-2026-11-15-calendar-nations-league-nov-2026
+DTSTAMP:20261012T165121Z
 SEQUENCE:0
-DTSTART;VALUE=DATE:20260921
-DTEND;VALUE=DATE:20261007
-SUMMARY:[TBD] Concacaf Nations League
-DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
- ceholder covering the whole announced window\, not a match.\nDates: 2026-0
- 9-21 to 2026-10-06 inclusive.\nVenues: Various\nCompetition window announc
- ed by Concacaf as 'September 21 - October 6'. No fixtures published yet --
-  this is a placeholder for the whole window\, not a match.\nSource: concac
- af -> https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nat
- ions-league
-CATEGORIES:WINDOW
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-X-USMNT-CONTENT-HASH:1ed39ba6f322f351
-END:VEVENT
-BEGIN:VEVENT
-UID:usmnt-2026-10-06-can
-DTSTAMP:20261005T160007Z
-SEQUENCE:1
-DTSTART:20261007T000000Z
-DTEND:20261007T020000Z
-SUMMARY:USMNT vs Canada
-DESCRIPTION:Kickoff 2026-10-07 00:00 UTC.\nLocal time at venue: 2026-10-06 
- 19:00 (America/Chicago\, UTC-5).\nCompetition: International Friendly - Fr
- iendlies 1\nVenue: Allianz Field\, St Paul\, MN\nTV/stream: FDP\, HBO Max\
- , Peacock\, TNT\, Universo\, Westwood One Sports\, truTV\n[ussoccer[usmnt]
- ] Kickoff is 00:00 UTC\; confirmed as a real time by the ticket campaign s
- tamp for 2026-10-06.\nSources: ussoccer[usmnt]\n  ussoccer[usmnt] -> https
- ://api.ussoccer.com/api/match?contestantId=9vh2u1p4ppm597tjfahst2m3n&year=
- 0&upcoming=25&past=0&includeCurrent=true&penaltyShots=true
-LOCATION:Allianz Field\, St Paul\, MN
-CATEGORIES:USMNT
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-X-USMNT-CONTENT-HASH:3dfe1d3e670042ad
-END:VEVENT
-BEGIN:VEVENT
-UID:window-2026-11-11-calendar-nations-league-nov-2026
-DTSTAMP:20261005T160007Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261118
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261122
 SUMMARY:[TBD] Concacaf Nations League
 DESCRIPTION:COMPETITION WINDOW -- no fixtures published yet.\nThis is a pla
  ceholder covering the whole announced window\, not a match.\nDates: 2026-1
- 1-11 to 2026-11-17 inclusive.\nVenues: Various\nCompetition window announc
- ed by Concacaf as 'November 11 - 17'. No fixtures published yet -- this is
+ 1-15 to 2026-11-21 inclusive.\nVenues: Various\nCompetition window announc
+ ed by Concacaf as 'November 15 - 21'. No fixtures published yet -- this is
   a placeholder for the whole window\, not a match.\nSource: concacaf -> ht
  tps://dapi.concacaf.com/v2/content/en-us/competitions/calendar-nations-lea
  gue-nov-2026
 CATEGORIES:WINDOW
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-X-USMNT-CONTENT-HASH:59a53d529fd9bd44
+X-USMNT-CONTENT-HASH:955df4a758888a5c
 END:VEVENT
 BEGIN:VEVENT
 UID:u17-2026-11-21-mne
